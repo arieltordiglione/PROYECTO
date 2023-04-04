@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Roboto:wght@100;300;700&display=swap');
+
+* {
+	font-family: 'Carme', 'sans-serif';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #f9f9f9;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	z-index: 100;
+}
+
+.logo {
+	font-size: 2em;
+	color: #000;
+	pointer-events: none;
+	margin-right: 270px;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: #000;
+	padding: 6px 15px;
+	border-radius: 20px;
+	margin: 0 10px;
+	font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+	background: #000;
+	color: #fff;
+}
+
+.parallax {
+	background-image: url(./img/bg.jpg);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+}
+
+#text {
+	position: absolute;
+	font-size: 8em;
+	color: #fff;
+	text-shadow: 4px 4px 8px rgba(0, 0, 0, 5);
+
+	/* 	z-index: 1; */
+}
+
+.parallax img {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	pointer-events: none;
+	align-self: self-end;
+}
+
+.sec {
+	background-image: url(./img/bgGray.svg);
+	background-attachment: fixed;
+	position: relative;
+
+	padding: 100px;
+	text-align: justify;
+}
+
+.sec h2 {
+	font-size: 3em;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+.sec p {
+	font-size: 1em;
+	color: #000;
+	margin-bottom: 10px;
+	font-weight: 300;
+}
+
+@media screen and (max-width: 1300px) {
+	.parallax {
+		height: 700px;
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.parallax {
+		height: 500px;
+		max-width: 100%;
+	}
+}
+
+/* @media screen and (max-width: 800px) {
+	.parallax {
+		height: 500px;
+	}
+}
+ */
