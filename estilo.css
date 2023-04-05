@@ -22,7 +22,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 0;
+	padding: 30px;
 	display: flex;
 	/* flex-wrap: nowrap; */
 	justify-content: flex-start;
@@ -34,6 +34,7 @@ header {
 	padding: 0px;
 	font-size: 2em;
 	color: #000;
+	margin-right: 120px;
 	pointer-events: none;
 }
 
@@ -56,6 +57,7 @@ header {
 .parallax {
 	/* 	background-image: url(./img/bg.jpg);
 	background-size: cover; */
+	margin-top: 50px;
 	height: 100vh;
 	width: 100%;
 	position: relative;
@@ -64,6 +66,16 @@ header {
 	align-items: center;
 
 	overflow: hidden;
+}
+
+.parallax:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+	background: linear-gradient(transparent, #fff);
+	z-index: 1000;
 }
 
 #text {
@@ -88,8 +100,6 @@ header {
 #bg {
 	height: 100%;
 	width: 100%;
-	float: le;
-	background-size: contain;
 }
 
 .sec {
