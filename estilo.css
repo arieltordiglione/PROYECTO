@@ -23,6 +23,7 @@ body {
 }
 
 /* NAV */
+
 header {
 	height: 70px;
 	display: flex;
@@ -52,7 +53,7 @@ header {
 	color: #cfd9e0;
 	font-size: 18px;
 	padding: 5px 10px;
-	transition: 0.2s;
+	transition: all 0.2s ease-in-out;
 }
 .nav__li a:hover,
 nav ul li a.active {
@@ -69,7 +70,7 @@ nav ul li a.active {
 	cursor: pointer;
 	display: none;
 }
-header .header-right .icono-barras div {
+.header-right .icono-barras div {
 	width: 20px;
 	height: 2px;
 	margin: 6px 0;
@@ -148,6 +149,7 @@ header .header-right .icono-barras div {
 
 @media only screen and (max-width: 1000px) {
 	/* NAV RESPONSIVE */
+
 	header {
 		padding: 0 20px;
 	}
@@ -163,28 +165,36 @@ header .header-right .icono-barras div {
 		height: fit-content;
 		background-color: #000;
 		padding: 30px;
-		transition: 0.3s;
 		text-align: center;
 		z-index: 1000000000;
 	}
-	header .header-left nav.active {
+	.nav.active {
 		top: 70px;
 	}
-	header .header-left nav ul {
+	.nav__ul {
 		display: block;
+	}
+
+	nav.active .nav__li a {
+		animation: moving 1.2s;
+	}
+
+	@keyframes moving {
+		from {
+			display: none;
+			transform: translateX(500px);
+		}
+		to {
+			display: block;
+			transform: translateX(0px);
+		}
 	}
 
 	/* TAMAÑO TEXTO PARALLAX */
 	#text {
 		font-size: 400%;
 	}
-}
-@media only screen and (max-width: 500px) {
-	nav .login-signup {
-		display: block;
-		margin-top: 20px;
-	}
-	header .header-right .login-signup {
-		display: none;
-	}
+
+	/* @media only screen and (max-width: 500px) {}
+} */
 }
