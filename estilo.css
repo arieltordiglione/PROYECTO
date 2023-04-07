@@ -64,12 +64,12 @@ nav ul li a.active {
 	align-items: center;
 }
 
-.header-right .hamburger {
+.header-right .icono-barras {
 	margin-left: 20px;
 	cursor: pointer;
 	display: none;
 }
-header .header-right .hamburger div {
+header .header-right .icono-barras div {
 	width: 20px;
 	height: 2px;
 	margin: 6px 0;
@@ -151,7 +151,7 @@ header .header-right .hamburger div {
 	header {
 		padding: 0 20px;
 	}
-	.header-right .hamburger {
+	.header-right .icono-barras {
 		display: block;
 	}
 	.header-left .nav {

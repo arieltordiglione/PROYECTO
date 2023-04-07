@@ -1,7 +1,7 @@
 /* NAV RESPONSIVE */
-hamburger = document.querySelector('.hamburger');
+iconobarras = document.querySelector('.icono-barras');
 nav = document.querySelector('nav');
-hamburger.onclick = function () {
+iconobarras.onclick = function () {
 	nav.classList.toggle('active');
 };
 
