@@ -81,7 +81,6 @@ nav ul li a.active {
 .parallax {
 	/* 	background-image: url(./img/bg.jpg);
 	background-size: cover; */
-
 	height: 100vh;
 	width: 100%;
 	position: relative;
@@ -106,7 +105,8 @@ nav ul li a.active {
 	position: absolute;
 	font-size: 8em;
 	color: #fff;
-	text-shadow: 4px 4px 8px rgba(0, 0, 0, 5);
+	text-shadow: 15px 15px 20px rgba(0, 0, 0, 9);
+	border
 	user-select: none;
 }
 
@@ -117,11 +117,13 @@ nav ul li a.active {
 	height: 90%;
 	pointer-events: none;
 	align-self: self-end;
+	filter: drop-shadow(0 22px 100px  rgba(0, 0, 0, 0.9));
 }
 
 #bg {
 	height: 100%;
 	width: 100%;
+	 
 }
 
 .sec {
@@ -176,7 +178,7 @@ nav ul li a.active {
 	}
 
 	nav.active .nav__li a {
-		animation: moving 1.2s;
+		animation: moving 1s;
 	}
 
 	@keyframes moving {
@@ -195,6 +197,8 @@ nav ul li a.active {
 		font-size: 400%;
 	}
 
-	/* @media only screen and (max-width: 500px) {}
-} */
-}
+	 @media only screen and (max-width: 500px) {
+ 
+	 }
+} 
+
