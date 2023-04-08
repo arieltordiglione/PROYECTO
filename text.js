@@ -21,3 +21,17 @@ window.addEventListener('scroll', () => {
 	mountain2.style.left = value * 2.5 + 'px';
 	mountain2.style.bottom = value * -1.5 + 'px';
 });
+
+/* WHATSAP BOTON */
+/* VER */
+
+window.addEventListener('scroll', function () {
+	var scrollPosition = window.scrollY;
+	if (scrollPosition > 400) {
+		document.querySelector('.btn-wsp').classList.add('show-btn');
+		document.querySelector('.btn-wsp').classList.remove('hide-btn');
+	} else {
+		document.querySelector('.btn-wsp').classList.add('hide-btn');
+		document.querySelector('.btn-wsp').classList.remove('show-btn');
+	}
+});

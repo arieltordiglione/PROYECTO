@@ -153,6 +153,7 @@ nav ul li a.active {
 
 /* BOTON WHATSAPP FLOTANTE */
 .btn-wsp {
+	display: none;
 	position: fixed;
 	width: 55px;
 	height: 55px;
@@ -172,6 +173,10 @@ nav ul li a.active {
 	text-decoration: none;
 	color: #0df053;
 	background: #fff;
+}
+
+.show-btn {
+	display: block;
 }
 
 /* PORTADA INDEX */
