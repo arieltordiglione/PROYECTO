@@ -42,8 +42,9 @@ header {
 	align-items: center;
 }
 .logo {
-	width: 140px;
+	width: 220px;
 	color: #fff;
+	font-size: 18px;
 }
 .nav {
 	margin-left: 50px;
