@@ -260,7 +260,7 @@ nav ul li a.active {
 }
 
 #miImagen {
-	/* width: 2300px; */
+	width: 2300px;
 	height: 100%;
 
 	right: 0;
