@@ -5,6 +5,19 @@ iconobarras.onclick = function () {
 	nav.classList.toggle('active');
 };
 
+/* WHATSAP BOTON */
+
+window.addEventListener('scroll', function () {
+	var scrollPosition = window.scrollY;
+	if (scrollPosition > 400) {
+		document.querySelector('.btn-wsp').classList.add('show-btn');
+		document.querySelector('.btn-wsp').classList.remove('hide-btn');
+	} else {
+		document.querySelector('.btn-wsp').classList.add('hide-btn');
+		document.querySelector('.btn-wsp').classList.remove('show-btn');
+	}
+});
+
 /* PORTADA INDEX */
 let bg = document.getElementById('bg');
 let text = document.getElementById('text');
@@ -22,15 +35,4 @@ window.addEventListener('scroll', () => {
 	mountain2.style.bottom = value * -1.5 + 'px';
 });
 
-/* WHATSAP BOTON */
-
-window.addEventListener('scroll', function () {
-	var scrollPosition = window.scrollY;
-	if (scrollPosition > 400) {
-		document.querySelector('.btn-wsp').classList.add('show-btn');
-		document.querySelector('.btn-wsp').classList.remove('hide-btn');
-	} else {
-		document.querySelector('.btn-wsp').classList.add('hide-btn');
-		document.querySelector('.btn-wsp').classList.remove('show-btn');
-	}
-});
+/* PORTADA USHUAIA  */
