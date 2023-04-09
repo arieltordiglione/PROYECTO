@@ -45,6 +45,7 @@ header {
 	width: 220px;
 	color: #fff;
 	font-size: 18px;
+	user-select: none;
 }
 .nav {
 	margin-left: 50px;
