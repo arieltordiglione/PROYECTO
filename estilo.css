@@ -205,7 +205,7 @@ nav ul li a.active {
 #text {
 	padding-top: 600px;
 	position: absolute;
-	font-size: 8em;
+	font-size: 5em;
 	color: #fff;
 	text-shadow: 15px 15px 20px rgba(0, 0, 0, 9);
 	user-select: none;
@@ -337,7 +337,7 @@ nav ul li a.active {
 
 	/* TAMAÑO TEXTO PARALLAX */
 	#text {
-		font-size: 400%;
+		font-size: 2.4em;
 	}
 
 	@media only screen and (max-width: 500px) {

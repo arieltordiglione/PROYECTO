@@ -23,7 +23,6 @@ window.addEventListener('scroll', () => {
 });
 
 /* WHATSAP BOTON */
-/* VER */
 
 window.addEventListener('scroll', function () {
 	var scrollPosition = window.scrollY;
