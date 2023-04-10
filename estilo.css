@@ -139,7 +139,7 @@ nav ul li a.active {
 
 .footer b {
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 10px 30px;
 }
 
 .footer__redes a {
@@ -360,10 +360,7 @@ nav ul li a.active {
 		align-items: baseline;
 		flex-direction: row;
 		flex-wrap: wrap;
-	}
-
-	.footer__redes a {
-		padding: 10px 15px;
+		padding: 5px;
 	}
 
 	/* TAMAÑO TEXTO PARALLAX */
