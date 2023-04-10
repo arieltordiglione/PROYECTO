@@ -112,7 +112,7 @@ nav ul li a.active {
 
 .footer__mail {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -145,7 +145,7 @@ nav ul li a.active {
 .footer__redes a {
 	text-decoration: none;
 	color: #000;
-	padding: 0px 5px;
+	padding: 10px 20px;
 }
 
 .link-contacto {
@@ -337,7 +337,7 @@ nav ul li a.active {
 	.footer__grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 		justify-items: center;
 	}
 
@@ -354,7 +354,16 @@ nav ul li a.active {
 	}
 
 	.footer__redes {
-		padding-bottom: 30px;
+		display: flex;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: baseline;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.footer__redes a {
+		padding: 10px 15px;
 	}
 
 	/* TAMAÑO TEXTO PARALLAX */
