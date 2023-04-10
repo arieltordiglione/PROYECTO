@@ -28,18 +28,18 @@ let ush = document.getElementById('ush');
 window.addEventListener('scroll', () => {
 	let value = window.scrollY;
 
-	bg.style.width = 100 + value / 30 + '%'; /* VER ESTO CREO QUE NO ANDA BIEN */
+	bg.style.width = 100 + value / 30 + '%';
 	text.style.marginTop = value * -0.7 + 'px';
 	mountain1.style.left = value * -2.5 + 'px';
 	mountain1.style.bottom = value * -1.5 + 'px';
 	mountain2.style.left = value * 2.5 + 'px';
 	mountain2.style.bottom = value * -1.5 + 'px';
-
-	ush.style.transform = translateX + 150 + 'px';
 });
 
 /* PORTADA USHUAIA  */
-const seccion = document.getElementById('miSeccion');
+
+/* ANDA A MEDIAS */
+/* const seccion = document.getElementById('miSeccion');
 const imagen = document.getElementById('miImagen');
 const seccionAncho = seccion.offsetWidth;
 const imagenAncho = imagen.offsetWidth;
@@ -50,6 +50,27 @@ function moverImagen() {
 	const maxScroll = seccion.offsetHeight - window.innerHeight;
 	const porcentaje = scrollPosicion / maxScroll;
 	imagen.style.transform = `translateX(-${distancia * porcentaje}px)`;
+}
+
+window.addEventListener('scroll', moverImagen); */
+
+/* NO ANDA PERO ME PARECE UNA BUENA IDEA */
+const seccion = document.getElementById('miSeccion');
+const imagen = document.getElementById('miImagen');
+const seccionAncho = seccion.offsetWidth;
+const imagenAncho = imagen.offsetWidth;
+
+function moverImagen() {
+	const distancia = (seccionAncho - imagenAncho) * 2;
+	const scrollPosicion = window.scrollY;
+	const maxScroll = seccion.offsetWidth - window.innerWidth;
+	const porcentaje = scrollPosicion / maxScroll;
+
+	if (scrollPosicion >= maxScroll) {
+		imagen.style.transform = `translateX(-${distancia}px)`;
+	} else {
+		imagen.style.transform = `translateX(-${distancia * porcentaje}px)`;
+	}
 }
 
 window.addEventListener('scroll', moverImagen);

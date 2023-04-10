@@ -255,17 +255,21 @@ nav ul li a.active {
 
 /* PORTADA USHUAIA */
 #miSeccion {
+	width: 2560px;
 	position: relative;
-
+	padding: 10px;
 	overflow-x: hidden;
+}
+#contenedorImagen {
+	width: 2300px;
+	height: 100%;
+	position: relative;
 }
 
 #miImagen {
-	width: 2300px;
-	height: 100%;
-
-	right: 0;
-
+	position: relative;
+	width: 100%;
+	height: auto;
 	transition: transform 0.5s ease-out;
 }
 
