@@ -55,7 +55,7 @@ function moverImagen() {
 window.addEventListener('scroll', moverImagen); */
 
 /* NO ANDA PERO ME PARECE UNA BUENA IDEA */
-const seccion = document.getElementById('miSeccion');
+/* const seccion = document.getElementById('miSeccion');
 const imagen = document.getElementById('miImagen');
 const seccionAncho = seccion.offsetWidth;
 const imagenAncho = imagen.offsetWidth;
@@ -73,4 +73,11 @@ function moverImagen() {
 	}
 }
 
-window.addEventListener('scroll', moverImagen);
+window.addEventListener('scroll', moverImagen); */
+
+const image = document.getElementById('miImagen');
+
+window.addEventListener('scroll', () => {
+	const scrolled = window.scrollY;
+	image.style.transform = `translateX(-${scrolled}px)`;
+});
