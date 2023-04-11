@@ -42,12 +42,14 @@ header {
 	display: flex;
 	align-items: center;
 }
-.logo {
+.logo a {
 	width: 220px;
 	color: #fff;
 	font-size: 18px;
 	user-select: none;
+	text-decoration: none;
 }
+
 .nav {
 	margin-left: 50px;
 }
@@ -273,7 +275,22 @@ nav ul li a.active {
 	height: auto;
 	transition: transform 0.5s ease-out;
 }
-
+/* VVERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
+/* #miImagen:hover {
+	animation-name: movingx;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	transition: all 2s;
+}
+@keyframes movingx {
+	from {
+		transform: translateX(00px);
+	}
+	to {
+		transform: translateX(-1200px);
+	}
+}
+ */
 @media only screen and (max-width: 1000px) {
 	/* NAV RESPONSIVE */
 
