@@ -260,12 +260,13 @@ nav ul li a.active {
 #miSeccion {
 	width: 100%;
 	/* width: 2560px; */
+
 	position: relative;
 	overflow-x: hidden;
 }
 #contenedorImagen {
 	width: 2300px;
-	height: 600px;
+
 	position: relative;
 }
 
