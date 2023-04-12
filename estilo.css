@@ -256,14 +256,15 @@ nav ul li a.active {
 	font-weight: 300;
 }
 
-/* PORTADA USHUAIA */
+/* PORTADA PROVINCIA */ /* CAMBIAR ID POR CLASSSSSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 #miSeccion {
-	width: 2560px;
+	width: 100%;
+	/* width: 2560px; */
 	position: relative;
 	padding: 10px;
 	overflow-x: hidden;
 }
-#contenedorImagen {
+/*#contenedorImagen {
 	width: 2300px;
 	height: 100%;
 	position: relative;
@@ -274,7 +275,7 @@ nav ul li a.active {
 	width: 100%;
 	height: auto;
 	transition: transform 0.5s ease-out;
-}
+} */
 /* VVERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
 /* #miImagen:hover {
 	animation-name: movingx;
@@ -291,6 +292,68 @@ nav ul li a.active {
 	}
 }
  */
+
+/* EXCURSIONES PROVINCIA */
+.excursiones {
+	width: 100%;
+	padding: 0px;
+	background-color: #fff;
+	padding: 2em 0em;
+}
+
+.excursiones h2 {
+	font-size: 4em;
+	text-align: center;
+}
+
+.card__container {
+	display: grid;
+	width: 98%;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+.card {
+	background-color: #fff;
+	border: 1px solid #bfbfbf;
+	border-radius: 0.25rem;
+	box-shadow: 3px 3px rgba(114, 113, 113, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-between;
+	text-align: justify;
+	text-decoration: none;
+	color: #000;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.card__img {
+	display: block;
+	width: 100%;
+	height: 20em;
+	object-fit: cover;
+	object-position: center;
+}
+
+.card__titulo {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.card__texto {
+	font-size: 1em;
+	text-align: center;
+}
+
+.card__precio {
+	font-size: 1.3em;
+	text-align: center;
+	padding: 10px;
+	font-weight: 700;
+}
 
 @media only screen and (max-width: 1000px) {
 	/* NAV RESPONSIVE */
@@ -385,6 +448,12 @@ nav ul li a.active {
 	/* TAMAÑO TEXTO PARALLAX */
 	#text {
 		font-size: 2.4em;
+	}
+
+	/* EXCURSIONES PROVINCIA */
+
+	.card__container {
+		grid-template-columns: 1fr 1fr;
 	}
 
 	@media only screen and (max-width: 500px) {
