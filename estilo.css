@@ -67,7 +67,9 @@ header {
 }
 .nav__li a:hover,
 nav ul li a.active {
-	color: #fff;
+	color: #ffffff;
+	letter-spacing: 0.4rem;
+	text-shadow: 2px 2px 8px #00ffdd;
 }
 
 .header-right {
@@ -84,7 +86,7 @@ nav ul li a.active {
 	width: 20px;
 	height: 2px;
 	margin: 6px 0;
-	background: #fff;
+	background: #cfd9e0;
 }
 
 /* FOOTER */
@@ -466,6 +468,7 @@ nav ul li a.active {
 		flex-direction: row;
 		flex-wrap: wrap;
 		padding: 5px;
+		padding-bottom: 35px; /* para que no moleste el boton flotante de whatsapp */
 	}
 
 	/* TAMAÑO TEXTO PARALLAX */
