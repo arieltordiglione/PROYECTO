@@ -14,11 +14,6 @@
 	--color-rojo: #f00;
 } */
 
-/* $color-white: #ffffff;
-$color-black: #121212;
-$color-dark: #212121;
-$color-orange: #ff652f; */
-
 body {
 	margin: 0;
 	padding: 0;
@@ -306,7 +301,14 @@ nav ul li a.active {
 .excursiones h2 {
 	font-size: 4em;
 	text-align: center;
-	padding-bottom: 1em;
+}
+
+.exc__intro {
+	text-align: justify;
+	padding: 2em 1em;
+	font-size: 1em;
+	letter-spacing: 0.1rem;
+	line-height: 1.7;
 }
 
 .card__container {
