@@ -295,7 +295,7 @@ nav ul li a.active {
 	width: 100%;
 	padding: 0px;
 	background-color: #fff;
-	padding: 2em 0em;
+	padding: 2em 0.8em;
 }
 
 .excursiones h2 {
@@ -334,11 +334,12 @@ nav ul li a.active {
 	color: #000;
 	overflow: hidden;
 	cursor: pointer;
+	padding: 1.2em;
 }
 
 .card:hover {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transition: all 0.8s;
 }
 
@@ -380,6 +381,27 @@ nav ul li a.active {
 	border-radius: 0.4rem;
 	transition: 0.2s;
 	cursor: pointer;
+}
+
+.servicios {
+	/* VERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR SI COMPARTEN PROPIEDADES CON CARDS EXCURSIONES */
+	width: 100%;
+	background-color: #fff;
+	padding: 2em 0em;
+}
+
+.servicios H2 {
+	font-size: 2em;
+	text-align: center;
+	padding: 2em 1em;
+}
+
+.card2__container {
+	display: grid;
+	width: 98%;
+	margin: 0 auto;
+	grid-template-columns: 1fr;
+	gap: 20px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -484,7 +506,7 @@ nav ul li a.active {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	@media only screen and (max-width: 500px) {
+	@media only screen and (max-width: 600px) {
 		/* EXCURSIONES PROVINCIA */
 
 		.card__container {
