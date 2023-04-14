@@ -75,9 +75,18 @@ function moverImagen() {
 
 window.addEventListener('scroll', moverImagen); */
 
-const image = document.getElementById('miImagen');
+/* const image = document.getElementById('miImagen');
 
 window.addEventListener('scroll', () => {
 	const scrolled = window.scrollY;
 	image.style.transform = `translateX(-${scrolled}px)`;
 });
+ */
+
+/* CASI FUNCIONA. FALTA POCO */
+/* $(window).scroll(function () {
+	var scroll_position = $(window).scrollTop() / 2;
+	$('.portada').css({
+		'background-position-x': -scroll_position + 'px',
+	});
+}); */
