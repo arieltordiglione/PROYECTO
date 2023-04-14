@@ -334,7 +334,7 @@ nav ul li a.active {
 	color: #000;
 	overflow: hidden;
 	cursor: pointer;
-	padding: 1.2em;
+	/* padding: 1.2em; */
 }
 
 .card:hover {
@@ -370,7 +370,7 @@ nav ul li a.active {
 .card__precio {
 	font-size: 1.4em;
 	text-align: center;
-	margin: 0 auto;
+	margin: 0 auto 0.8em;
 	padding: 10px;
 	font-weight: 700;
 	display: block;
@@ -413,7 +413,7 @@ nav ul li a.active {
 .servicios H2 {
 	font-size: 2em;
 	text-align: center;
-	padding: 2em 1em;
+	padding: 2em 1em 0em;
 }
 
 .card2__container {
