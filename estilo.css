@@ -370,15 +370,16 @@ nav ul li a.active {
 .card__precio {
 	font-size: 1.4em;
 	text-align: center;
+	margin: 0 auto;
 	padding: 10px;
 	font-weight: 700;
 	display: block;
-	width: 100%;
+	width: 90%;
 	padding: 1.5rem;
 	color: #404040;
 	background-color: #eee;
 	border: none;
-	border-radius: 0.4rem;
+	border-radius: 50px;
 	transition: 0.2s;
 	cursor: pointer;
 }
