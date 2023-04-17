@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Roboto:wght@100;300;700&display=swap');
+
+* {
+	font-family: 'Carme', 'sans-serif';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* averiguar si se usa ROOT para definir todos los colores y modificarlos rapido */
+/* :root {
+	--color-gris1: #ccc;
+	--color-gris2: #aaa;
+	--color-gris3: #555555;
+	--color-rojo: #f00;
+} */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #f9f9f9;
+	min-height: 100vh;
+	overflow-x: hidden;
+	behavior: smooth;
+}
+
+/* NAV */
+
+header {
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 50px;
+	background: #000;
+}
+.header-left {
+	display: flex;
+	align-items: center;
+}
+.logo a {
+	width: 220px;
+	color: #fff;
+	font-size: 18px;
+	user-select: none;
+	text-decoration: none;
+}
+
+.nav {
+	margin-left: 50px;
+}
+.nav__ul {
+	display: flex;
+	list-style: none;
+}
+.nav__li a {
+	text-decoration: none;
+	display: block;
+	color: #cfd9e0;
+	font-size: 18px;
+	padding: 5px 10px;
+	transition: all 0.2s ease-in-out;
+}
+.nav__li a:hover,
+nav ul li a.active {
+	color: #ffffff;
+	letter-spacing: 0.4rem;
+	text-shadow: 2px 2px 8px #00ffdd;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+}
+
+.header-right .icono-barras {
+	margin-left: 20px;
+	cursor: pointer;
+	display: none;
+}
+.header-right .icono-barras div {
+	width: 20px;
+	height: 2px;
+	margin: 6px 0;
+	background: #cfd9e0;
+}
+
+/* FOOTER */
+.footer {
+	background: #ebebeb;
+	padding: 30px 0;
+}
+
+.footer__title {
+	text-align: center;
+	padding: 10px 0 30px 0;
+}
+
+.footer__grid {
+	display: grid;
+	grid-template-columns: 1.1fr 1.1fr 1fr 0.8fr;
+	justify-items: center;
+}
+
+.footer__tel {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.footer__mail {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.footer__direccion {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.footer__redes {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.footer b {
+	display: inline-block;
+	padding: 10px 30px;
+}
+
+.footer__redes a {
+	text-decoration: none;
+	color: #000;
+	padding: 10px 20px;
+}
+
+.link-contacto {
+	text-decoration: none;
+	color: #000;
+}
+
+/* BOTON WHATSAPP FLOTANTE */
+.btn-wsp {
+	display: none;
+	position: fixed;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	bottom: 30px;
+	right: 30px;
+	background: #0df053;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+	z-index: 1;
+}
+
+.btn-wsp:hover {
+	text-decoration: none;
+	color: #0df053;
+	background: #fff;
+}
+
+.show-btn {
+	display: block;
+}
+
+/* PORTADA INDEX */
+.parallax {
+	/* 	background-image: url(./img/bg.jpg);
+	background-size: cover; */
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.parallax:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+	background: linear-gradient(transparent, #fff);
+	z-index: 1000;
+}
+
+#text {
+	padding-top: 600px;
+	position: absolute;
+	font-size: 5em;
+	color: #fff;
+	text-shadow: 15px 15px 20px rgba(0, 0, 0, 9);
+	user-select: none;
+}
+
+.parallax img {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 90%;
+	pointer-events: none;
+	align-self: self-end;
+	filter: drop-shadow(0 22px 100px rgba(0, 0, 0, 0.9));
+}
+
+#bg {
+	height: 100%;
+	width: 100%;
+}
+
+/* CUERPO INDEX */
+
+.sec__index {
+	/* 	background-image: url(./img/bgGray.svg); 
+	background-attachment: fixed;
+	position: relative;
+*/
+	background-color: #fff;
+	padding: 5px;
+	text-align: justify;
+}
+
+.sec__index h2 {
+	font-size: 3em;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+.sec__index p {
+	font-size: 1em;
+	color: #000;
+	margin-bottom: 10px;
+	font-weight: 300;
+}
+
+/* PORTADA PROVINCIA */
+.portada {
+	width: 100%;
+	height: 700px;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	color: #fff;
+	font-size: 4em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+.portada__ushuaia {
+	background-image: url(/img/ushuaia/Ushuaia-1536x864.jpeg);
+}
+
+.portada__calafate {
+	background-image: url(/img/elcalafate/perito-moreno1920x650.jpg);
+}
+
+.portada__bariloche {
+	background-image: url(/img/bariloche/cerrocatedral-bariloche.jpg);
+}
+
+/* EXCURSIONES PROVINCIA */
+.excursiones {
+	width: 100%;
+	padding: 0px;
+	background-color: #fff;
+	padding: 2em 0.8em;
+}
+
+.excursiones h1 {
+	font-size: 4em;
+	text-align: center;
+}
+
+.excursiones h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
+.exc__intro {
+	text-align: justify;
+	padding: 2em 1em;
+	font-size: 1em;
+	letter-spacing: 0.1rem;
+	line-height: 1.7;
+}
+
+.card__container {
+	display: grid;
+	width: 100%;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+.card {
+	background-color: #fff;
+	border: 0.5px solid #bfbfbf;
+	border-radius: 0.4rem;
+	/* box-shadow: 3px 3px rgba(114, 113, 113, 0.5); */
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.38);
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-between;
+	text-align: justify;
+	text-decoration: none;
+	color: #000;
+	overflow: hidden;
+	cursor: pointer;
+	/* padding: 1.2em; */
+}
+
+.card:hover {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	transform: scale(1.05);
+	transition: all 0.8s;
+	filter: brightness(120%) saturate(130%);
+}
+
+.card__img {
+	display: block;
+	width: 100%;
+	height: 20em;
+	object-fit: cover;
+	object-position: center;
+}
+
+.card__titulo {
+	font-size: 1.3em;
+	text-align: center;
+	color: #0d0d0d;
+	margin: 0.8em 0px;
+}
+
+.card__texto {
+	font-size: 1em;
+	text-align: center;
+	letter-spacing: 0.1rem;
+	line-height: 1.7;
+	color: darken(#404040);
+	margin: 0.8em 0px;
+}
+
+.card__precio {
+	font-size: 1.4em;
+	text-align: center;
+	margin: 0 auto 0.8em;
+	padding: 10px;
+	font-weight: 700;
+	display: block;
+	width: 90%;
+	padding: 1.5rem;
+	color: #404040;
+	background-color: #eee;
+	border: none;
+	border-radius: 50px;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.mapa {
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	background-image: url(/img/bgGray.svg);
+	background-attachment: fixed;
+	background-color: #ccc;
+	/* 	border: 0.5px solid #bfbfbf;
+	border-radius: 0.4rem; 
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.38);*/
+}
+.mapa iframe {
+	width: 100%;
+	height: 400px;
+	padding: 1.2em;
+	/* 	border: 1px solid #000000;
+	border-radius: 0.4rem;
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.38); */
+}
+
+.servicios {
+	/* VERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR SI COMPARTEN PROPIEDADES CON CARDS EXCURSIONES */
+	width: 100%;
+	background-color: #fff;
+	padding: 2em 0em;
+}
+
+.servicios H2 {
+	font-size: 2em;
+	text-align: center;
+	padding: 2em 1em 0em;
+}
+
+.card2__container {
+	display: grid;
+	width: 98%;
+	margin: 0 auto;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	padding: 2em 0em;
+}
+
+@media only screen and (max-width: 1000px) {
+	/* NAV RESPONSIVE */
+
+	header {
+		padding: 0 20px;
+	}
+	.header-right .icono-barras {
+		display: block;
+	}
+	.header-left .nav {
+		margin: 0;
+		position: absolute;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: fit-content;
+		background-color: #000;
+		padding: 30px;
+		text-align: center;
+		z-index: 1000000000;
+	}
+	.nav.active {
+		top: 70px;
+	}
+	.nav__ul {
+		display: block;
+	}
+
+	/* ANIMACIÓN DE NAV RESPONSIVE */
+	nav.active li:nth-of-type(1) {
+		animation: moving 1s;
+	}
+
+	nav.active li:nth-of-type(2) {
+		animation: moving 1.1s;
+	}
+
+	nav.active li:nth-of-type(3) {
+		animation: moving 1.2s;
+	}
+
+	nav.active li:nth-of-type(4) {
+		animation: moving 1.3s;
+	}
+
+	nav.active li:nth-of-type(5) {
+		animation: moving 1.4s;
+	}
+
+	@keyframes moving {
+		from {
+			display: none;
+			transform: translateX(500px);
+		}
+		to {
+			display: block;
+			transform: translateX(0px);
+		}
+	}
+
+	/* FOOTER */
+	.footer__grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		justify-items: center;
+	}
+
+	.footer__tel {
+		padding-bottom: 30px;
+	}
+
+	.footer__mail {
+		padding-bottom: 30px;
+	}
+
+	.footer__direccion {
+		padding-bottom: 30px;
+	}
+
+	.footer__redes {
+		display: flex;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: baseline;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 5px;
+		padding-bottom: 35px; /* para que no moleste el boton flotante de whatsapp */
+	}
+
+	/* TAMAÑO TEXTO PARALLAX */
+	#text {
+		font-size: 2.4em;
+	}
+
+	/* EXCURSIONES PROVINCIA */
+
+	.card__container {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media only screen and (max-width: 600px) {
+		/* EXCURSIONES PROVINCIA */
+
+		.card__container {
+			grid-template-columns: 1fr;
+		}
+	}
+}
