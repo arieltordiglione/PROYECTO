@@ -290,8 +290,13 @@ nav ul li a.active {
 	padding: 2em 0.8em;
 }
 
-.excursiones h2 {
+.excursiones h1 {
 	font-size: 4em;
+	text-align: center;
+}
+
+.excursiones h2 {
+	font-size: 2em;
 	text-align: center;
 }
 
