@@ -90,3 +90,5 @@ window.addEventListener('scroll', () => {
 		'background-position-x': -scroll_position + 'px',
 	});
 }); */
+
+console.log('SCRIPT EJECUTADO');
