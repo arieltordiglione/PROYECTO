@@ -271,15 +271,15 @@ nav ul li a.active {
 	user-select: none;
 }
 .portada__ushuaia {
-	background-image: url(/img/ushuaia/Ushuaia-1536x864.jpeg);
+	background-image: url(../img/ushuaia/Ushuaia-1536x864.jpeg);
 }
 
 .portada__calafate {
-	background-image: url(/img/elcalafate/perito-moreno1920x650.jpg);
+	background-image: url(../img/elcalafate/perito-moreno1920x650.jpg);
 }
 
 .portada__bariloche {
-	background-image: url(/img/bariloche/cerrocatedral-bariloche.jpg);
+	background-image: url(../img/bariloche/cerrocatedral-bariloche.jpg);
 }
 
 /* EXCURSIONES PROVINCIA */
@@ -386,7 +386,7 @@ nav ul li a.active {
 	width: 100%;
 	height: 400px;
 	margin: 0 auto;
-	background-image: url(/img/bgGray.svg);
+	background-image: url(../img/bgGray.svg);
 	background-attachment: fixed;
 	background-color: #ccc;
 	/* 	border: 0.5px solid #bfbfbf;
