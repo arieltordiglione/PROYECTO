@@ -92,41 +92,43 @@ window.addEventListener('scroll', () => {
 }); */
 
 /* SLIDER EXCURSIONES */
-/* let indice = 1;
-muestraSlides(indice);
-
-function avanzaSlide(n) {
-	muestraSlides((indice += n));
+const sliderImages = document.querySelectorAll('.slider-images img');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+let currentImage = 0;
+// Función para mostrar la imagen
+function showImage(n) {
+	// Oculta todas las imágenes
+	for (let i = 0; i < sliderImages.length; i++) {
+		sliderImages[i].style.display = 'none';
+	}
+	// Muestra la imagen actual
+	sliderImages[n].style.display = 'block';
 }
 
-function posicionSlide() {
-	muestraSlides((indice = n));
+// Función para mover a la imagen anterior
+function prevImage() {
+	currentImage--;
+	if (currentImage < 0) {
+		currentImage = sliderImages.length - 1;
+	}
+	showImage(currentImage);
 }
 
-setInterval(function tiempo() {
-	muestraSlides(indice + 1);
-}, 4000);
-
-function muestraSlides(n) {
-	let i;
-	let slides = document.getElementsByClassName('miSlider');
-	let barras = document.getElementsByClassName('barra');
-
-	if (n > slides.length) {
-		indice = 1;
+// Función para mover a la siguiente imagen
+function nextImage() {
+	currentImage++;
+	if (currentImage >= sliderImages.length) {
+		currentImage = 0;
 	}
-	if (n < 1) {
-		indice = slides.length();
-	}
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display('none');
-	}
-
-	for (i = 0; i < barras.length; i++) {
-		barras[i].className = barras[i].className.replace(' active', '');
-	}
+	showImage(currentImage);
 }
-slides[indice - 1].style.display = 'block';
-barras[indice - 1].className += 'active'; */
+
+// Agrega event listeners a los botones de anterior y siguiente
+prevButton.addEventListener('click', prevImage);
+nextButton.addEventListener('click', nextImage);
+
+// Muestra la primera imagen al cargar la página
+showImage(currentImage);
 
 console.log('SCRIPT EJECUTADO');
