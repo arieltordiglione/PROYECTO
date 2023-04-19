@@ -33,6 +33,12 @@ h2 {
 	text-align: center;
 }
 
+p {
+	font-size: 1em;
+	letter-spacing: 0.1rem;
+	line-height: 1.7;
+}
+
 /* NAV */
 
 header {
