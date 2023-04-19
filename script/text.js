@@ -5,6 +5,10 @@ iconobarras.onclick = function () {
 	nav.classList.toggle('active');
 };
 
+/* FECHA COPYRIGTH FOOTER */
+let fecha = document.getElementById('fecha');
+fecha.innerHTML = new Date().getFullYear();
+
 /* WHATSAP BOTON */
 
 window.addEventListener('scroll', function () {

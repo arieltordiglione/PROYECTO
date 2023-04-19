@@ -163,6 +163,12 @@ nav ul li a.active {
 	color: #000;
 }
 
+.copy {
+	font-size: 1em;
+	padding-top: 2em;
+	text-align: center;
+}
+
 /* BOTON WHATSAPP FLOTANTE */
 .btn-wsp {
 	display: none;
