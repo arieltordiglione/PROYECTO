@@ -21,6 +21,7 @@ body {
 	min-height: 100vh;
 	overflow-x: hidden;
 	behavior: smooth;
+	background-color: #fff;
 }
 
 h1 {
@@ -360,7 +361,7 @@ nav ul li a.active {
 	border: 0.5px solid #bfbfbf;
 	/* border-radius: 0.4rem; */
 	/* box-shadow: 3px 3px rgba(114, 113, 113, 0.5); */
-	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.38);
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
 	display: flex;
 	flex-direction: column;
 	align-content: center;
@@ -515,16 +516,91 @@ nav ul li a.active {
 .next-button:hover {
 	background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* EXCURSION CUERPO - EXCURSION DESCRIPCION Y FORMULARIO*/
+.excursion__container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.excursion__container h2 {
+	padding-top: 30px;
+}
+
+.descripcion {
+	text-align: justify;
+	margin: 0 10px;
+	padding-top: 25px;
+	animation: aparicion 2s;
+}
+
+/* FORMULARIO */
+.formulario {
+	/* width: 400px; */
+	margin: 0 10px;
+
+	position: relative;
+	padding-top: 30px;
+	animation: moving 2s;
+}
+
+.formulario__input {
+	display: block;
+	width: 95%;
+	font-size: 1.3em;
+	padding: 20px 0px;
+	background: rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(120, 120, 120, 0.3);
+	/* margin-bottom: 40px; */
+	margin: 0 auto 40px auto;
+}
+
+.formulario__input:focus {
+	outline: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.formulario__input:focus + .formulario__label {
+	margin-top: -135px;
+}
+
+.formulario__label {
+	display: block;
+	width: 100%;
+	font-size: 1.3em;
+	padding-left: 10px;
+	position: absolute;
+	margin-top: -85px;
+	z-index: -20;
+	color: rgba(0, 0, 0, 1);
+	transition: all 0.3s;
+}
+
+.formulario__submit {
+	display: block;
+	width: 100%;
+	font-size: 1.3em;
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	padding: 10px 20px;
+	cursor: pointer;
+	width: 100%;
+}
+.fijar {
+	/* con JS lo agregamos al input */
+	margin-top: -135px;
+}
+
 @media only screen and (max-width: 1000px) {
 	h1 {
 		font-size: 2em;
 		text-align: center;
 	}
 
-	h2 {
+	/* 	h2 {
 		font-size: 1em;
 		text-align: center;
-	}
+	} */
 
 	/* NAV RESPONSIVE */
 
@@ -614,6 +690,13 @@ nav ul li a.active {
 
 	.card__container {
 		grid-template-columns: 1fr 1fr;
+	}
+
+	/* EXCURSION CUERPO - EXCURSION DESCRIPCION Y FORMULARIO*/
+	.excursion__container {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
 	}
 
 	@media only screen and (max-width: 600px) {
