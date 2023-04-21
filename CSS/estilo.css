@@ -420,7 +420,7 @@ nav ul li a.active {
 	padding: 1.5rem;
 	color: #fff;
 	background-color: #3498db;
-	border: #fbfbfb solid 4px;
+	border: #347fdb solid 4px;
 	border-radius: 50px;
 	transition: 0.2s;
 	cursor: pointer;
@@ -596,6 +596,7 @@ nav ul li a.active {
 	cursor: pointer;
 	border: #fbfbfb solid 4px;
 	background-color: #3498db;
+	border-color: #347fdb;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -604,7 +605,7 @@ nav ul li a.active {
 
 .formulario__submit:hover {
 	background-color: rgba(0, 0, 0, 0);
-	color: #0493bd;
+	color: #3498db;
 	border-color: #3498db;
 	transition: ease 0.5s;
 }
