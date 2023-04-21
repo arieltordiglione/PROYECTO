@@ -435,7 +435,7 @@ nav ul li a.active {
 	border-color: #3498db;
 	/* 	background-position: 340% 50%; */
 	background-position: 100% 50%; /* MÁS NORMAL */
-	transition: ease-in 1s;
+	transition: ease-in 0.5s;
 }
 
 .mapa {
@@ -615,7 +615,7 @@ nav ul li a.active {
 	border-color: #3498db;
 	/* background-position: 340% 50%; */
 	background-position: 100% 50%; /* MÁS NORMAL */
-	transition: ease-in 1s;
+	transition: ease-in 0.5s;
 }
 
 .fijar {
