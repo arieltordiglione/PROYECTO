@@ -419,18 +419,23 @@ nav ul li a.active {
 	width: 90%;
 	padding: 1.5rem;
 	color: #fff;
-	background-color: #3498db;
 	border: #347fdb solid 4px;
 	border-radius: 50px;
-	transition: 0.2s;
-	cursor: pointer;
+	background: -webkit-linear-gradient(
+		45deg,
+		#3498db 50%,
+		#fff 50%
+	); /* para mover el fondo con hover */
+	background-position: 0 50%;
+	background-size: 250% 100%;
 }
 
 .card__precio:hover {
-	background-color: rgba(0, 0, 0, 0);
-	color: #0493bd;
+	color: #3498db;
 	border-color: #3498db;
-	transition: ease 0.5s;
+	/* 	background-position: 340% 50%; */
+	background-position: 100% 50%; /* MÁS NORMAL */
+	transition: ease-in 1s;
 }
 
 .mapa {
@@ -586,29 +591,33 @@ nav ul li a.active {
 }
 
 .formulario__submit {
+	/* botón */
 	display: block;
 	width: 80%;
 	font-size: 1.3em;
-	background: rgba(0, 0, 0, 0.7);
 	color: #fff;
 	margin: 0 auto 40px auto;
 	padding: 20px 0px;
 	cursor: pointer;
-	border: #fbfbfb solid 4px;
-	background-color: #3498db;
-	border-color: #347fdb;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+	border: #347fdb solid 4px;
 	border-radius: 50px;
+	background: -webkit-linear-gradient(
+		45deg,
+		#3498db 50%,
+		#fff 50%
+	); /* para mover el fondo con hover */
+	background-position: 0 50%;
+	background-size: 250% 100%;
 }
 
 .formulario__submit:hover {
-	background-color: rgba(0, 0, 0, 0);
 	color: #3498db;
 	border-color: #3498db;
-	transition: ease 0.5s;
+	/* background-position: 340% 50%; */
+	background-position: 100% 50%; /* MÁS NORMAL */
+	transition: ease-in 1s;
 }
+
 .fijar {
 	/* con JS lo agregamos al input */
 	margin-top: -135px;
