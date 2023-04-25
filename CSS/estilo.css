@@ -637,7 +637,7 @@ nav ul li a.active {
 }
 
 .datos {
-	background-color: #ddd;
+	background-color: #ccc;
 	padding: 25px;
 	display: flex;
 	flex-direction: column;
