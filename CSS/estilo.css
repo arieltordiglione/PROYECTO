@@ -560,7 +560,7 @@ nav ul li a.active {
 
 .formulario__input {
 	display: block;
-	width: 95%;
+	width: 100%;
 	font-size: 1.3em;
 	padding: 20px 0px;
 	background: rgba(0, 0, 0, 0.1);
@@ -581,13 +581,13 @@ nav ul li a.active {
 	display: block;
 	width: 100%;
 	font-size: 1.3em;
-	padding-left: 10px;
+	padding-left: 20px;
 	position: absolute;
 	margin-top: -85px;
 	z-index: -20;
 	color: rgba(0, 0, 0, 1);
 	transition: all 0.3s;
-	margin-left: 25px;
+	/* 	margin-left: 25px; */
 }
 
 .formulario__submit {
@@ -626,6 +626,7 @@ nav ul li a.active {
 /* EXCURSION DATOS */
 .excursion__datos {
 	margin-top: 2em;
+	width: 100%;
 }
 .datos__resumen {
 	display: grid;
