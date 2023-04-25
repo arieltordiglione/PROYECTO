@@ -534,7 +534,7 @@ nav ul li a.active {
 .excursion__container {
 	width: 100%;
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1fr 2fr;
 }
 
 .excursion__container h2 {
@@ -587,7 +587,7 @@ nav ul li a.active {
 	z-index: -20;
 	color: rgba(0, 0, 0, 1);
 	transition: all 0.3s;
-	margin-left: 10px;
+	margin-left: 25px;
 }
 
 .formulario__submit {
@@ -621,6 +621,30 @@ nav ul li a.active {
 .fijar {
 	/* con JS lo agregamos al input */
 	margin-top: -135px;
+}
+
+/* EXCURSION DATOS */
+.excursion__datos {
+	margin-top: 2em;
+}
+.datos__resumen {
+	display: grid;
+	width: 90%;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 10px;
+	padding: 20px 0;
+}
+
+.datos {
+	background-color: #ccc;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	text-align: center;
+	box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -731,11 +755,23 @@ nav ul li a.active {
 		grid-template-columns: 1fr;
 	}
 
-	@media only screen and (max-width: 600px) {
-		/* EXCURSIONES PROVINCIA */
+	/* EXCURSION DATOS */
+	.datos__resumen {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+}
 
-		.card__container {
-			grid-template-columns: 1fr;
-		}
+@media only screen and (max-width: 600px) {
+	/* EXCURSIONES PROVINCIA */
+
+	.card__container {
+		grid-template-columns: 1fr;
+	}
+
+	/* EXCURSION DATOS */
+	.datos__resumen {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 	}
 }
