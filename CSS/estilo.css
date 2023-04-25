@@ -534,7 +534,7 @@ nav ul li a.active {
 .excursion__container {
 	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 1fr;
 }
 
 .excursion__container h2 {

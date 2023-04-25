@@ -1,11 +1,15 @@
 *TODO EL INDEX
 
 *EN EXCURSION: FARODELFINDELMUNDO para replicar en el resto
--arreglar el diseño, no se como diagramarlo.
--poner precio unitario y que lo multiplique por la cantidad de personas(en input) y de el valor total.
+ARIEL -arreglar el diseño, no se como diagramarlo.---- UNO ABAJO DEL OTRO CENTRADO.
+
+JOHA -poner precio unitario y que lo multiplique por la cantidad de personas(en input) y de el valor total.
+placeholder "1" para cantidad de pasajeros??
+
+
 -agregar otra galeria, fotos o detalle? o video de youtube!!!!!!!!!!!!!!!
 
-*PAGINA POR "TRASLADOS" Y "ALQUILER DE AUTO"? O manda a whatsap para "reservar"?
+*PAGINA POR "TRASLADOS" Y "ALQUILER DE AUTO"? O manda a whatsap para "reservar"?      MANDAR A WHATSAPP
 *AGREGAR "ALQUILER DE ROPA PARA NIEVE"en otros servicios?
 
 *CONTACTO. formulario, mapa con ubicacion, whatsapp, etc.
