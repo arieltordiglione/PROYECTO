@@ -535,11 +535,17 @@ nav ul li a.active {
 .excursion__container {
 	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
 }
 
 .excursion__container h2 {
 	padding-top: 30px;
+}
+.descripcion__container {
+	grid-area: 1 / 1 / 2 / 3;
 }
 
 .descripcion {
@@ -549,7 +555,53 @@ nav ul li a.active {
 	animation: aparicion 2s;
 }
 
+/* EXCURSION DATOS */
+.excursion__datos {
+	margin-top: 2em;
+	width: 100%;
+	grid-area: 2 / 1 / 3 / 3;
+}
+.datos__resumen {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	width: 95%;
+	margin: 0 auto;
+	gap: 10px;
+	padding: 20px 0;
+}
+
+.datos {
+	background-color: #ccc;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	text-align: center;
+	box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* VIDEO YOUTUBE */
+.video__container {
+	grid-area: 3 / 1 / 5 / 2;
+	padding: 35px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10px;
+}
+
+.video__container iframe {
+	width: 100%;
+	height: 450px;
+	border-radius: 5px;
+}
+
 /* FORMULARIO */
+.formulario__container {
+	grid-area: 3 / 2 / 5 / 3;
+}
 .formulario {
 	/* width: 400px; */
 	margin: 0 10px;
@@ -622,31 +674,6 @@ nav ul li a.active {
 .fijar {
 	/* con JS lo agregamos al input */
 	margin-top: -135px;
-}
-
-/* EXCURSION DATOS */
-.excursion__datos {
-	margin-top: 2em;
-	width: 100%;
-}
-.datos__resumen {
-	display: grid;
-	width: 90%;
-	margin: 0 auto;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	gap: 10px;
-	padding: 20px 0;
-}
-
-.datos {
-	background-color: #ccc;
-	padding: 25px;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-content: space-around;
-	text-align: center;
-	box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 1470px) {
@@ -762,6 +789,22 @@ nav ul li a.active {
 		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr;
+	}
+
+	.descripcion__container {
+		grid-area: 1 / 1 / 2 / 2;
+	}
+
+	.excursion__datos {
+		grid-area: 2 / 1 / 3 / 2;
+	}
+
+	.video__container {
+		grid-area: 3 / 1 / 4 / 2;
+	}
+
+	.formulario__container {
+		grid-area: 4 / 1 / 5 / 2;
 	}
 
 	/* EXCURSION DATOS */
