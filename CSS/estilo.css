@@ -546,13 +546,13 @@ nav ul li a.active {
 }
 .descripcion__container {
 	grid-area: 1 / 1 / 2 / 3;
+	animation: aparicion 2s;
 }
 
 .descripcion {
 	text-align: justify;
 	margin: 0 10px;
 	padding-top: 25px;
-	animation: aparicion 2s;
 }
 
 /* EXCURSION DATOS */
@@ -591,25 +591,25 @@ nav ul li a.active {
 	justify-content: space-between;
 	align-items: center;
 	gap: 10px;
+	animation: aparicion 2s;
 }
 
 .video__container iframe {
 	width: 100%;
 	height: 450px;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 }
 
 /* FORMULARIO */
 .formulario__container {
 	grid-area: 3 / 2 / 5 / 3;
+	animation: moving 2s;
 }
 .formulario {
 	/* width: 400px; */
 	margin: 0 10px;
-
 	position: relative;
 	padding-top: 30px;
-	animation: moving 2s;
 }
 
 .formulario__input {
