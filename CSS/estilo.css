@@ -560,6 +560,7 @@ nav ul li a.active {
 	margin-top: 2em;
 	width: 100%;
 	grid-area: 2 / 1 / 3 / 3;
+	animation: moving 2s;
 }
 .datos__resumen {
 	display: grid;
