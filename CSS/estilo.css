@@ -473,6 +473,7 @@ nav ul li a.active {
 .card2__container {
 	display: grid;
 	width: 98%;
+
 	margin: 0 auto;
 	grid-template-columns: 1fr;
 	gap: 20px;
@@ -648,6 +649,13 @@ nav ul li a.active {
 	box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
 }
 
+@media only screen and (max-width: 1470px) {
+	/* EXCURSIONES PROVINCIA */
+
+	.card__container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
 @media only screen and (max-width: 1000px) {
 	h1 {
 		font-size: 2em;
