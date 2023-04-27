@@ -1,11 +1,4 @@
 *TODO EL INDEX
-
-*EN EXCURSION: FARODELFINDELMUNDO para replicar en el resto
- 
- clonar farodelfindelmundo en el resto. joha paso texto de descripcion tambien
-
- 
-
  
 *AGREGAR "ALQUILER DE ROPA PARA NIEVE"en otros servicios?
 

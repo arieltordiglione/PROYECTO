@@ -69,6 +69,225 @@
 		</section>
 
 		<h1>ISLA VICTORIA Y BOSQUE DE ARRAYANES</h1>
+		<section class="excursion__container">
+			<div class="descripcion__container">
+				<!-- DESCRIPCION+TITULO -->
+				<h2><i class="fas fa-info-circle"></i> DESCRIPCIÓN</h2>
+				<p class="descripcion">
+					Tras una hora de navegación, partiendo desde Puerto Pañuelo en la
+					imponente Península de Llao Llao, se arriba a la península de
+					Quetrihue, lugar de asiento del Bosque de Arrayanes, ubicada en el
+					noreste del Lago Nahuel Huapi. <br />
+					El Arrayan (Quetrihue en lengua mapuche) es un arbusto de exquisito
+					color azafrán y flores blancas. En este lugar, unico en el mundo, toma
+					la envergadura de “árbol” para formar un mágico e inusual Bosque.
+					Luego se navega hacia Puerto Anchorena, Isla Victoria, en donde es
+					posible disfrutar de una flora autóctona, prolífera en especies de
+					magnífico porte. <br />
+					Dejarse llevar en el tiempo, recorriendo los senderos que llegan hasta
+					Playa del Toro, para descubrir allí las pinturas rupestres hechas por
+					pueblos originarios habitantes de esta zona, en el marco de una
+					espléndida playa de arena volcánica, es una experiencia inolvidable y
+					mágica. <br />
+					La compañía de Nuestros Guías del Parque Nacional colabora con la
+					información precisa y necesaria, para que este paseo sea único.
+				</p>
+			</div>
+
+			<div class="excursion__datos">
+				<h2><i class="fas fa-info-circle"></i> OTROS DATOS</h2>
+
+				<div class="datos__resumen">
+					<div class="datos">
+						<h3>
+							<i class="fa-solid fa-location-dot"></i> <br />
+							LUGAR DE INICIO
+						</h3>
+						<p>Nuestra Oficina</p>
+					</div>
+
+					<div class="datos">
+						<h3><i class="fa-solid fa-bell"></i> HORARIO DE INICIO</h3>
+						<p>-7 AM</p>
+					</div>
+
+					<div class="datos">
+						<h3><i class="fa-solid fa-clock"></i> DURACIÓN</h3>
+						<p>8 horas</p>
+					</div>
+
+					<div class="datos">
+						<h3><i class="fa-solid fa-child-reaching"></i> EXIGENCIA</h3>
+						<p>Media/baja (4/10)</p>
+					</div>
+					<div class="datos">
+						<h3><i class="fa-solid fa-circle-check"></i> INCLUIDO</h3>
+						<p>-Tasa de navegación</p>
+						<p>-Guía</p>
+					</div>
+
+					<div class="datos">
+						<h3>
+							<i class="fa-solid fa-circle-xmark"></i><br />
+							NO INCLUIDO
+						</h3>
+						<p>-Acceso a Parque.</p>
+						<p>-Comida</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="video__container">
+				<iframe
+					src="https://www.youtube.com/embed/aMSJq6GnxYQ"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				></iframe>
+
+				<iframe
+					src="https://www.youtube.com/embed/uPlAs84dqGw"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				></iframe>
+			</div>
+
+			<div class="formulario__container">
+				<h2><i class="far fa-calendar-check"></i> RESERVAR!</h2>
+
+				<form action="" class="formulario">
+					<input
+						type="text"
+						id="nombre"
+						name="nombre"
+						class="formulario__input"
+						action=""
+						required
+					/>
+					<label for="" class="formulario__label"
+						><i class="fa-solid fa-user"></i> Nombre</label
+					>
+
+					<input
+						type="text"
+						id="apellido"
+						name="apellido"
+						class="formulario__input"
+						action=""
+						required
+					/>
+					<label for="" class="formulario__label"
+						><i class="fa-solid fa-user"></i> Apellido</label
+					>
+
+					<input
+						type="text"
+						id="dni"
+						name="dni"
+						class="formulario__input"
+						action=""
+						required
+					/>
+					<label for="" class="formulario__label"
+						><i class="fa-solid fa-id-card"></i> DNI/Pasaporte</label
+					>
+
+					<input
+						type="date"
+						id="fecha_nacimiento"
+						name="fecha_nacimiento"
+						class="formulario__input"
+						required
+					/>
+					<label for="" class="formulario__label fijar">
+						<i class="fa-solid fa-calendar"></i> Fecha de nacimiento</label
+					>
+
+					<input
+						type="email"
+						id="email"
+						name="email"
+						class="formulario__input"
+						action=""
+						required
+					/>
+					<label for="" class="formulario__label"
+						><i class="fa-sharp fa-solid fa-at"></i> Email</label
+					>
+
+					<input
+						type="tel"
+						id="telefono"
+						name="telefono"
+						class="formulario__input"
+						action=""
+						required
+					/>
+					<label for="" class="formulario__label"
+						><i class="fa-solid fa-phone"></i> Teléfono</label
+					>
+
+					<input
+						type="date"
+						id="fecha_reserva"
+						name="fecha_reserva"
+						class="formulario__input"
+						action=""
+						required
+					/>
+
+					<label for="" class="formulario__label fijar"
+						><i class="fa-regular fa-calendar-check"></i> Fecha de
+						reserva</label
+					>
+
+					<input
+						type="number"
+						id="cantidad"
+						name="cantidad"
+						value="1"
+						onchange="calcular();"
+						class="formulario__input"
+						action=""
+						required
+					/>
+					<label for="" class="formulario__label fijar"
+						><i class="fa-solid fa-users"></i> Cantidad de pasajeros</label
+					>
+
+					<input
+						type="hidden"
+						id="total"
+						name="total"
+						class="formulario__input"
+						onchange="calcular();"
+						value="20000"
+						action=""
+						required
+					/>
+
+					<input
+						type="text"
+						id="resultado"
+						name="resultado"
+						value="20000"
+						class="formulario__input"
+						readonly="true"
+						action=""
+						required
+					/>
+					<label for="" class="formulario__label fijar"
+						><i class="fa-solid fa-wallet"></i> Monto Total</label
+					>
+
+					<input type="submit" value="Enviar" class="formulario__submit" />
+				</form>
+			</div>
+		</section>
+
 		<span class="whatsapp">
 			<a
 				href="https://api.whatsapp.com/send/?phone=5491136111279"
