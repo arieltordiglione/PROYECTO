@@ -95,3 +95,13 @@ for (let i = 0; i < inputs.length; i++) {
 		}
 	});
 }
+
+/* Funcion para calcular pasajeros*/
+function calcular() {
+	num_pasajero = document.getElementById('cantidad').value;
+	cost_excursion = document.getElementById('total').value;
+
+	result = num_pasajero * cost_excursion;
+
+	document.getElementById('resultado').value = result;
+}

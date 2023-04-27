@@ -2,10 +2,7 @@
 
 *EN EXCURSION: FARODELFINDELMUNDO para replicar en el resto
  
-
-JOHA -poner precio unitario y que lo multiplique por la cantidad de personas(en input) y de el valor total.
-placeholder "1" para cantidad de pasajeros??
-
+ clonar farodelfindelmundo en el resto. joha paso texto de descripcion tambien
 
  
 

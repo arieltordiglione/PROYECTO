@@ -45,22 +45,10 @@
 		</header>
 		<section class="slider">
 			<div class="slider-images">
-				<img
-					src="../../img/ushuaia/farodelfindelmundo/faro2.jpg"
-					alt="Faro del Fin del Mundo"
-				/>
-				<img
-					src="../../img/ushuaia/farodelfindelmundo/faro3.jpg"
-					alt="Faro del Fin del Mundo"
-				/>
-				<img
-					src="../../img/ushuaia/farodelfindelmundo/faro1.jpg"
-					alt="Faro del Fin del Mundo"
-				/>
-				<img
-					src="../../img/ushuaia/farodelfindelmundo/faro4.jpg"
-					alt="Faro del Fin del Mundo"
-				/>
+				<img src="../../img/ushuaia/farodelfindelmundo/faro2.jpg" alt="Faro del Fin del Mundo" />
+				<img src="../../img/ushuaia/farodelfindelmundo/faro3.jpg" alt="Faro del Fin del Mundo" />
+				<img src="../../img/ushuaia/farodelfindelmundo/faro1.jpg" alt="Faro del Fin del Mundo" />
+				<img src="../../img/ushuaia/farodelfindelmundo/faro4.jpg" alt="Faro del Fin del Mundo" />
 			</div>
 			<div class="slider-controls">
 				<button class="prev-button">&#10094;</button>
@@ -74,28 +62,26 @@
 				<!-- DESCRIPCION+TITULO -->
 				<h2><i class="fas fa-info-circle"></i> DESCRIPCIÓN</h2>
 				<p class="descripcion">
-					Comenzamos la navegación saliendo desde el Muelle Turístico de nuestra
-					ciudad, en dirección al Canal Beagle, disfrutando a medida que nos
-					alejamos, de la vista panorámica de la costa de Ushuaia, divisando los
-					edificios más importantes, Museo Marítimo (antiguo presidio), Museo
-					del Fin del Mundo, el área industrial, y los montes Olivia y Cinco
+					Comenzamos la navegación saliendo desde el Muelle Turístico de nuestra ciudad, en
+					dirección al Canal Beagle, disfrutando a medida que nos alejamos, de la vista panorámica
+					de la costa de Ushuaia, divisando los edificios más importantes, Museo Marítimo (antiguo
+					presidio), Museo del Fin del Mundo, el área industrial, y los montes Olivia y Cinco
 					Hermanos.
 					<br />
-					Nos dirigimos a las Islas Bridges donde hacemos nuestra parada y
-					descenso en Isla Karelo. <br />
-					Navegamos hacia el sudoeste, acercándonos a la isla de Los Lobos,
-					donde, desde la embarcación, podremos disfrutar de la vista de
-					ejemplares de lobos marinos, observando su hábitat permanente, en un
-					escenario maravilloso. <br />
-					Continuando la navegación, nos dirigiremos hacia la isla de Los
-					Pájaros, hábitat de cormoranes magallánicos y cormoranes Imperiales y
-					sector privilegiado para divisar ejemplares de la avifauna marina.
+					Nos dirigimos a las Islas Bridges donde hacemos nuestra parada y descenso en Isla Karelo.
 					<br />
-					Continuamos hacia el Faro Les Eclaireurs, en el archipiélago del mismo
-					nombre, donde naufragó el buque Monte Cervantes en el año 1930. <br />
-					El regreso será a través del Paso Chico, divisando las Estancias Túnel
-					y Fique, regresamos a Ushuaia, con una vista del imponente marco que
-					le da a la ciudad el Monte Martial y el glaciar del mismo nombre.
+					Navegamos hacia el sudoeste, acercándonos a la isla de Los Lobos, donde, desde la
+					embarcación, podremos disfrutar de la vista de ejemplares de lobos marinos, observando su
+					hábitat permanente, en un escenario maravilloso. <br />
+					Continuando la navegación, nos dirigiremos hacia la isla de Los Pájaros, hábitat de
+					cormoranes magallánicos y cormoranes Imperiales y sector privilegiado para divisar
+					ejemplares de la avifauna marina.
+					<br />
+					Continuamos hacia el Faro Les Eclaireurs, en el archipiélago del mismo nombre, donde
+					naufragó el buque Monte Cervantes en el año 1930. <br />
+					El regreso será a través del Paso Chico, divisando las Estancias Túnel y Fique, regresamos
+					a Ushuaia, con una vista del imponente marco que le da a la ciudad el Monte Martial y el
+					glaciar del mismo nombre.
 				</p>
 			</div>
 
@@ -170,9 +156,7 @@
 						action=""
 						required
 					/>
-					<label for="" class="formulario__label"
-						><i class="fa-solid fa-user"></i> Nombre</label
-					>
+					<label for="" class="formulario__label"><i class="fa-solid fa-user"></i> Nombre</label>
 
 					<input
 						type="text"
@@ -182,18 +166,9 @@
 						action=""
 						required
 					/>
-					<label for="" class="formulario__label"
-						><i class="fa-solid fa-user"></i> Apellido</label
-					>
+					<label for="" class="formulario__label"><i class="fa-solid fa-user"></i> Apellido</label>
 
-					<input
-						type="text"
-						id="dni"
-						name="dni"
-						class="formulario__input"
-						action=""
-						required
-					/>
+					<input type="text" id="dni" name="dni" class="formulario__input" action="" required />
 					<label for="" class="formulario__label"
 						><i class="fa-solid fa-id-card"></i> DNI/Pasaporte</label
 					>
@@ -229,9 +204,7 @@
 						action=""
 						required
 					/>
-					<label for="" class="formulario__label"
-						><i class="fa-solid fa-phone"></i> Teléfono</label
-					>
+					<label for="" class="formulario__label"><i class="fa-solid fa-phone"></i> Teléfono</label>
 
 					<input
 						type="date"
@@ -243,20 +216,46 @@
 					/>
 
 					<label for="" class="formulario__label fijar"
-						><i class="fa-regular fa-calendar-check"></i> Fecha de
-						reserva</label
+						><i class="fa-regular fa-calendar-check"></i> Fecha de reserva</label
 					>
 
 					<input
 						type="number"
 						id="cantidad"
 						name="cantidad"
+						value="1"
+						onchange="calcular();"
 						class="formulario__input"
 						action=""
 						required
 					/>
-					<label for="" class="formulario__label"
+					<label for="" class="formulario__label fijar"
 						><i class="fa-solid fa-users"></i> Cantidad de pasajeros</label
+					>
+
+					<input
+						type="hidden"
+						id="total"
+						name="total"
+						class="formulario__input"
+						onchange="calcular();"
+						value="15000"
+						action=""
+						required
+					/>
+
+					<input
+						type="text"
+						id="resultado"
+						name="resultado"
+						value="15000"
+						class="formulario__input"
+						readonly="true"
+						action=""
+						required
+					/>
+					<label for="" class="formulario__label fijar"
+						><i class="fa-solid fa-wallet"></i> Monto Total</label
 					>
 
 					<input type="submit" value="Enviar" class="formulario__submit" />
@@ -265,10 +264,7 @@
 		</section>
 
 		<span class="whatsapp">
-			<a
-				href="https://api.whatsapp.com/send/?phone=5491136111279"
-				class="btn-wsp"
-				target="_blank"
+			<a href="https://api.whatsapp.com/send/?phone=5491136111279" class="btn-wsp" target="_blank"
 				><i class="fab fa-whatsapp" class="icon-whatsapp"></i>
 			</a>
 		</span>
@@ -279,15 +275,11 @@
 					<h3 class="footer__title">ATENCIÓN TELEFÓNICA</h3>
 					<b>
 						<i class="fas fa-phone-alt"></i> Teléfono Ventas <br />
-						<a class="link-contacto" href="tel:+541147567153"
-							>(5411) 1111-1111/ 2222
-						</a>
+						<a class="link-contacto" href="tel:+541147567153">(5411) 1111-1111/ 2222 </a>
 					</b>
 					<b>
 						<i class="fas fa-phone-alt"></i> Teléfono Admin <br />
-						<a class="link-contacto" href="tel:+541147622449"
-							>(5411) 2222-2222/ 3333</a
-						>
+						<a class="link-contacto" href="tel:+541147622449">(5411) 2222-2222/ 3333</a>
 					</b>
 				</section>
 
@@ -295,15 +287,11 @@
 					<h3 class="footer__title">ENVIANOS UN EMAIL</h3>
 					<b>
 						<i class="fas fa-envelope"></i> Ventas: <br />
-						<a class="link-contacto" href="mailto:modopatag@gmail.com">
-							modopatag@gmail.com</a
-						>
+						<a class="link-contacto" href="mailto:modopatag@gmail.com"> modopatag@gmail.com</a>
 					</b>
 					<b>
 						<i class="fas fa-envelope"></i> Admin: <br />
-						<a class="link-contacto" href="mailto:modopatag2@gmail.com"
-							>modopatag2@gmail.com
-						</a>
+						<a class="link-contacto" href="mailto:modopatag2@gmail.com">modopatag2@gmail.com </a>
 					</b>
 				</section>
 
@@ -338,10 +326,7 @@
 			</div>
 		</footer>
 
-		<script
-			src="https://kit.fontawesome.com/2f8a2be623.js"
-			crossorigin="anonymous"
-		></script>
+		<script src="https://kit.fontawesome.com/2f8a2be623.js" crossorigin="anonymous"></script>
 
 		<script src="../../script/text.js"></script>
 	</body>
