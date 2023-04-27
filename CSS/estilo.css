@@ -593,6 +593,8 @@ nav ul li a.active {
 	align-items: center;
 	gap: 10px;
 	animation: aparicion 2s;
+	padding-top: 95px;
+	padding-bottom: 150px;
 }
 
 .video__container iframe {
@@ -818,7 +820,6 @@ nav ul li a.active {
 
 @media only screen and (max-width: 600px) {
 	/* EXCURSIONES PROVINCIA */
-
 	.card__container {
 		grid-template-columns: 1fr;
 	}
@@ -827,5 +828,11 @@ nav ul li a.active {
 	.datos__resumen {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	/* VIDEO YOUTUBE */
+	.video__container {
+		padding-top: 20px;
+		padding-bottom: 00px;
 	}
 }
