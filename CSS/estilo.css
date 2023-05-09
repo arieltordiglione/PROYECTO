@@ -277,27 +277,216 @@ nav ul li a.active {
 
 /* CUERPO INDEX */
 
-.sec__index {
-	/* 	background-image: url(./img/bgGray.svg); 
-	background-attachment: fixed;
-	position: relative;
-*/
-	background-color: #fff;
-	padding: 5px;
+/*ABOUT*/
+.about_grid {
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 30px 0 30px 100px;
+}
+
+.about_content {
 	text-align: justify;
-}
-
-.sec__index h2 {
-	font-size: 3em;
-	color: #000;
-	margin-bottom: 10px;
-}
-
-.sec__index p {
+	padding: 2em 1em;
 	font-size: 1em;
-	color: #000;
-	margin-bottom: 10px;
+	letter-spacing: 0.1rem;
+	line-height: 1.7;
+	background-color: #cddbdb;
+	margin-top: 1em;
+}
+
+/* CONTACTO Y FORMULARIO*/
+.contacto_container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr; /*3 / 2 / 5 / 3;*/
+	grid-area: 3 / 2 / 5 / 3;
+	padding-top: 20em;
+}
+
+.contacto_imagen img {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 40%;
+	pointer-events: none;
+	align-self: self-end;
+	filter: drop-shadow(0 22px 100px rgba(0, 0, 0, 0.9));
+}
+
+.contacto_descripcion_container {
+	grid-area: 1 / 1 / 2 / 2;
+	padding-top: 30px;
+}
+
+.contacto_content {
+	text-align: center;
+	padding: 2em 1em;
+	letter-spacing: 0.1rem;
+	line-height: 1.7;
+	margin-top: 1em;
+}
+
+.contacto_content,
+h3 {
+	font-size: 1em;
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.contacto_mapa {
+	width: 100%;
+	height: 450px;
+	margin: 0 auto;
+	background-image: url(../img/bgGray.svg);
+	background-attachment: fixed;
+	background-color: #ccc;
+}
+
+.contacto_mapa iframe {
+	width: 100%;
+	height: 400px;
+	padding: 1.2em;
+}
+
+/* Section_Servicios*/
+.servicios_container {
+	width: 100%;
+	display: grid;
+	background-color: #e2b10f;
+}
+
+.servicios_title {
+	text-align: center;
+	padding: 10px;
+	font-style: italic;
 	font-weight: 300;
+}
+
+.servicios_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	row-gap: 20px;
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	padding: 30px 30px;
+}
+
+.servicios_grid img {
+	width: 100px;
+	height: 100px;
+	border: #3498db;
+	object-position: center;
+}
+
+.servicios_contenido {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.servicios_contenido p {
+	align-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/*section Preguntas Frecuentes*/
+
+.questions_container {
+	width: 100%;
+	height: fit-content;
+	display: grid;
+	background-color: #e8ebee;
+	padding: 20px 0 20px 0;
+}
+
+.questions_title {
+	text-align: center;
+	padding: 2em 1em;
+	font-size: 1em;
+	letter-spacing: 0.1rem;
+	line-height: 1.5;
+}
+
+.accordion {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	width: 50%;
+	height: fit-content;
+	border: 1px solid #dedede;
+	border-radius: 8px;
+	margin: 0 auto;
+}
+
+.accordion-toggle,
+.accordion-header {
+	font-size: 15px;
+	width: 100%;
+	height: 3em;
+	margin: 0;
+	line-height: 3em;
+	cursor: pointer;
+}
+/*El botón que pliega/despliega*/
+.accordion-toggle {
+	opacity: 0;
+	background-color: transparent;
+	z-index: 1;
+	margin-bottom: 2px;
+}
+/*Bloque para el título*/
+.accordion-header {
+	background-color: #ffffff;
+	color: #7f8787;
+	position: relative;
+	margin-top: -3em;
+	padding-left: 5px;
+	width: 100%;
+}
+
+/*Bloque replegable con el contenido */
+.accordion-content {
+	box-sizing: border-box;
+	background-color: #f7f7f7;
+	color: #7f8787;
+	overflow: auto;
+	position: relative;
+	width: 100%;
+	height: 250px;
+	margin-bottom: -250px;
+	padding: 30px 0 0 10px;
+	transition: margin 0.3s ease 0.1s;
+}
+.accordion-toggle:checked + .accordion-header + .accordion-content {
+	margin-bottom: 0;
+	margin-right: 0;
+}
+.accordion-header::before,
+.accordion-toggle:checked + .accordion-header::before {
+	content: '+';
+	display: inline-block;
+	text-align: center;
+	width: 1em;
+	font-size: 1em;
+}
+.accordion-toggle:checked + .accordion-header::before {
+	content: '-';
+}
+
+.accordion-toggle:hover + .accordion-header {
+	background-color: #f7f1f1;
+}
+.accordion-toggle:checked + .accordion-header {
+	background-color: #fff;
 }
 
 /* PORTADA PROVINCIA */
@@ -678,6 +867,72 @@ nav ul li a.active {
 .fijar {
 	/* con JS lo agregamos al input */
 	margin-top: -135px;
+}
+
+/* FORMULARIO CONTACTO*/
+.form_container {
+	grid-area: 3 / 0 / 5 / 3;
+	animation: moving 2s;
+	padding-top: 2em;
+}
+.form_contacto {
+	margin: 0 10px;
+	position: relative;
+	padding-top: 30px;
+}
+
+.form__input {
+	display: block;
+	width: 100%;
+	font-size: 0, 5em;
+	padding: 20px 0px;
+	background: rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(120, 120, 120, 0.3);
+	margin: 0 auto 40px auto;
+}
+
+.form__input:focus {
+	outline: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.form__input:focus + .form__label {
+	margin-top: -135px;
+}
+
+.form__label {
+	display: block;
+	width: 100%;
+	font-size: 1.1em;
+	padding-left: 20px;
+	position: absolute;
+	margin-top: -85px;
+	z-index: -20;
+	color: rgba(0, 0, 0, 1);
+	transition: all 0.3s;
+}
+
+.form__submit {
+	/* botón */
+	display: block;
+	width: 30%;
+	font-size: 1.3em;
+	color: #fff;
+	margin: 0 auto 40px auto;
+	padding: 20px 0px;
+	cursor: pointer;
+	border: #347fdb solid 4px;
+	border-radius: 30px;
+	background: -webkit-linear-gradient(45deg, #3498db 50%, #fff 50%);
+	background-position: 0 50%;
+	background-size: 250% 100%;
+}
+
+.form__submit:hover {
+	color: #3498db;
+	border-color: #3498db;
+	/* background-position: 340% 50%; */
+	background-position: 100% 50%; /* MÁS NORMAL */
+	transition: ease-in 0.5s;
 }
 
 @media only screen and (max-width: 1470px) {

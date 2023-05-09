@@ -1,8 +1,31 @@
-*TODO EL INDEX
+ ingresar contacto.html en todas las hojas
  
-*AGREGAR "ALQUILER DE ROPA PARA NIEVE"en otros servicios?
+ INDEX:
+ *centrar bien los container 
+*ver responsive
+ *margins y paddings
+ *
 
-*CONTACTO. formulario, mapa con ubicacion, whatsapp, etc.
+ CONTACTO:
+ * sombra rara en nav
+*cosas recortadas por la imagen
+*puedo poner la imagen fixed como en las provincias
+*formulario que usen los mismos nombres y atributos para no repetir codigo y funcione mejor ya que el JS no fija
+*mapa  usen los mismos nombres y atributos para no repetir codigo
+*ver responsive
+*
+*
 
-*ver fotos que se cortan en resoluciones de pantalla grandes o queda asi?
+****
+*preguntar a joha que boton usamos y que queden todos iguales
+*ver colores
+*revisar tamaño de letra, interlineado, etc
+* revisar todos los margin y paddings para que este todo uniforme
+
+
+
+
+ver fotos que se cortan en resoluciones de pantalla grandes o queda asi?
+
+
 
