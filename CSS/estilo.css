@@ -280,8 +280,15 @@ nav ul li a.active {
 /* CUERPO INDEX */
 
 /*ABOUT*/
+/* .sec__index {
+		background-image: url(/img/bgOrange.svg);
+	background-attachment: fixed; 
+}
+*/
+
 .sec__index h2 {
 	margin: 1em 0em;
+	/* 	background-color: #fff; */
 }
 .about_grid {
 	width: 90%;
@@ -353,7 +360,9 @@ nav ul li a.active {
 	width: 100%;
 	height: fit-content;
 	display: grid;
-	background-color: #e8ebee;
+	background-image: url(/img/bgOrange.svg);
+	background-attachment: fixed;
+	/* background-color: #e8ebee; */
 	padding: 20px 0 20px 0;
 }
 
@@ -367,7 +376,7 @@ nav ul li a.active {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
-	width: 90%;
+	width: 50%;
 	height: fit-content;
 	border: 1px solid #dedede;
 	border-radius: 8px;
@@ -445,23 +454,7 @@ nav ul li a.active {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr; /*3 / 2 / 5 / 3;*/
-	grid-area: 3 / 2 / 5 / 3;
-	padding-top: 20em;
-}
-
-.contacto_imagen img {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 40%;
-	pointer-events: none;
-	align-self: self-end;
-	filter: drop-shadow(0 22px 100px rgba(0, 0, 0, 0.9));
-}
-
-.contacto_descripcion_container {
-	grid-area: 1 / 1 / 2 / 2;
-	padding-top: 30px;
+	padding: 30px 0px;
 }
 
 .contacto_content {
@@ -476,21 +469,6 @@ nav ul li a.active {
 h3 {
 	font-size: 1em;
 	grid-area: 2 / 2 / 3 / 3;
-}
-
-.contacto_mapa {
-	width: 100%;
-	height: 450px;
-	margin: 0 auto;
-	background-image: url(../img/bgGray.svg);
-	background-attachment: fixed;
-	background-color: #ccc;
-}
-
-.contacto_mapa iframe {
-	width: 100%;
-	height: 400px;
-	padding: 1.2em;
 }
 
 /* PORTADA PROVINCIA */
@@ -520,6 +498,10 @@ h3 {
 
 .portada__bariloche {
 	background-image: url(../img/bariloche/cerrocatedral-bariloche.jpg);
+}
+
+.portada__contacto {
+	background-image: url(../img/contacto/argentina_patagonia.jpg);
 }
 
 /* EXCURSIONES PROVINCIA */
@@ -639,6 +621,7 @@ h3 {
 	background-image: url(../img/bgGray.svg);
 	background-attachment: fixed;
 	background-color: #ccc;
+
 	/* 	border: 0.5px solid #bfbfbf;
 	border-radius: 0.4rem; 
 	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.38);*/
@@ -647,9 +630,14 @@ h3 {
 	width: 100%;
 	height: 400px;
 	padding: 1.2em;
+	padding-bottom: 30px;
 	/* 	border: 1px solid #000000;
 	border-radius: 0.4rem;
 	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.38); */
+}
+
+.mapa h3 {
+	text-align: center;
 }
 
 .servicios {
@@ -873,72 +861,6 @@ h3 {
 	margin-top: -135px;
 }
 
-/* FORMULARIO CONTACTO*/
-.form_container {
-	grid-area: 3 / 0 / 5 / 3;
-	animation: moving 2s;
-	padding-top: 2em;
-}
-.form_contacto {
-	margin: 0 10px;
-	position: relative;
-	padding-top: 30px;
-}
-
-.form__input {
-	display: block;
-	width: 100%;
-	font-size: 0, 5em;
-	padding: 20px 0px;
-	background: rgba(0, 0, 0, 0.1);
-	border: 1px solid rgba(120, 120, 120, 0.3);
-	margin: 0 auto 40px auto;
-}
-
-.form__input:focus {
-	outline: 1px solid rgba(0, 0, 0, 0.7);
-}
-
-.form__input:focus + .form__label {
-	margin-top: -135px;
-}
-
-.form__label {
-	display: block;
-	width: 100%;
-	font-size: 1.1em;
-	padding-left: 20px;
-	position: absolute;
-	margin-top: -85px;
-	z-index: -20;
-	color: rgba(0, 0, 0, 1);
-	transition: all 0.3s;
-}
-
-.form__submit {
-	/* botón */
-	display: block;
-	width: 30%;
-	font-size: 1.3em;
-	color: #fff;
-	margin: 0 auto 40px auto;
-	padding: 20px 0px;
-	cursor: pointer;
-	border: #347fdb solid 4px;
-	border-radius: 30px;
-	background: -webkit-linear-gradient(45deg, #3498db 50%, #fff 50%);
-	background-position: 0 50%;
-	background-size: 250% 100%;
-}
-
-.form__submit:hover {
-	color: #3498db;
-	border-color: #3498db;
-	/* background-position: 340% 50%; */
-	background-position: 100% 50%; /* MÁS NORMAL */
-	transition: ease-in 0.5s;
-}
-
 @media only screen and (max-width: 1470px) {
 	/* EXCURSIONES PROVINCIA */
 
@@ -1074,6 +996,11 @@ h3 {
 	.datos__resumen {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
+	}
+
+	/* CONTACTO */
+	.contacto_container {
+		grid-template-columns: 1fr;
 	}
 }
 

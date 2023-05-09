@@ -2,18 +2,23 @@
  aplicar animaciones
 
 
-
+ 
+ INDEX:
+ * arreglar parallax en responsive
  
 
  CONTACTO:
- * sombra rara en nav
-*cosas recortadas por la imagen
-*puedo poner la imagen fixed como en las provincias
-*formulario que usen los mismos nombres y atributos para no repetir codigo y funcione mejor ya que el JS no fija
-*mapa  usen los mismos nombres y atributos para no repetir codigo
-*ver responsive
-*
-*
+ 
+ 
+ 
+**********TUVE QUE SUBIR EL CODIGO DEL FORMULARIO EN JS PORQUE SI NO NO ANDABA EN CONTACTO. PERO EN EL RESTO DE LA PAGINA SI***********
+
+
+
+
+
+
+
 
 ****
 *preguntar a joha que boton usamos y que queden todos iguales
