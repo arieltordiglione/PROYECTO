@@ -1011,6 +1011,10 @@ h3 {
 		grid-template-columns: 1fr;
 	}
 
+	.accordion {
+		width: 90%;
+	}
+
 	/* EXCURSIONES PROVINCIA */
 	.card__container {
 		grid-template-columns: 1fr;
