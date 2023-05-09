@@ -1,10 +1,9 @@
  
+ aplicar animaciones
+
+
+
  
- INDEX:
- *centrar bien los container 
-*ver responsive
- *margins y paddings
- *
 
  CONTACTO:
  * sombra rara en nav
