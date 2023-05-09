@@ -1,4 +1,4 @@
- ingresar contacto.html en todas las hojas
+ 
  
  INDEX:
  *centrar bien los container 
