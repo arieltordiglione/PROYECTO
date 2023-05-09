@@ -42,7 +42,7 @@ p {
 	line-height: 1.7;
 }
 
-@keyframes moving {
+@keyframes derizq {
 	from {
 		display: none;
 		transform: translateX(500px);
@@ -53,7 +53,7 @@ p {
 	}
 }
 
-@keyframes aparicion {
+@keyframes izqder {
 	from {
 		opacity: 0;
 		transform: translateX(-100%);
@@ -519,7 +519,7 @@ h3 {
 	font-size: 1em;
 	letter-spacing: 0.1rem;
 	line-height: 1.7;
-	animation-name: aparicion;
+	animation-name: izqder;
 	animation-duration: 0.5s;
 }
 
@@ -529,7 +529,7 @@ h3 {
 	margin: 0 auto;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 10px;
-	animation-name: moving;
+	animation-name: derizq;
 	animation-duration: 1s;
 }
 
@@ -729,7 +729,7 @@ h3 {
 }
 .descripcion__container {
 	grid-area: 1 / 1 / 2 / 3;
-	animation: aparicion 2s;
+	animation: izqder 2s;
 }
 
 .descripcion {
@@ -743,7 +743,7 @@ h3 {
 	margin-top: 2em;
 	width: 100%;
 	grid-area: 2 / 1 / 3 / 3;
-	animation: moving 2s;
+	animation: derizq 2s;
 }
 .datos__resumen {
 	display: grid;
@@ -774,7 +774,7 @@ h3 {
 	justify-content: space-between;
 	align-items: center;
 	gap: 10px;
-	animation: aparicion 2s;
+	animation: izqder 2s;
 	padding-top: 95px;
 	padding-bottom: 150px;
 }
@@ -788,7 +788,7 @@ h3 {
 /* FORMULARIO */
 .formulario__container {
 	grid-area: 3 / 2 / 5 / 3;
-	animation: moving 2s;
+	animation: derizq 2s;
 }
 .formulario {
 	/* width: 400px; */
@@ -909,23 +909,23 @@ h3 {
 
 	/* ANIMACIÓN DE NAV RESPONSIVE */
 	nav.active li:nth-of-type(1) {
-		animation: moving 1s;
+		animation: derizq 1s;
 	}
 
 	nav.active li:nth-of-type(2) {
-		animation: moving 1.1s;
+		animation: derizq 1.1s;
 	}
 
 	nav.active li:nth-of-type(3) {
-		animation: moving 1.2s;
+		animation: derizq 1.2s;
 	}
 
 	nav.active li:nth-of-type(4) {
-		animation: moving 1.3s;
+		animation: derizq 1.3s;
 	}
 
 	nav.active li:nth-of-type(5) {
-		animation: moving 1.4s;
+		animation: derizq 1.4s;
 	}
 
 	/* FOOTER */
