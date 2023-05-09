@@ -1,25 +1,7 @@
  
- aplicar animaciones
-
-
+*aplicar animaciones
+* arreglar parallax en INDEX en responsive
  
- INDEX:
- * arreglar parallax en responsive
- 
-
- CONTACTO:
- 
- 
- 
-**********TUVE QUE SUBIR EL CODIGO DEL FORMULARIO EN JS PORQUE SI NO NO ANDABA EN CONTACTO. PERO EN EL RESTO DE LA PAGINA SI***********
-
-
-
-
-
-
-
-
 ****
 *preguntar a joha que boton usamos y que queden todos iguales
 *ver colores
@@ -33,3 +15,4 @@ ver fotos que se cortan en resoluciones de pantalla grandes o queda asi?
 
 
 
+**********TUVE QUE SUBIR EL CODIGO DEL FORMULARIO EN JS PORQUE SI NO NO ANDABA EN CONTACTO. PERO EN EL RESTO DE LA PAGINA SI***********

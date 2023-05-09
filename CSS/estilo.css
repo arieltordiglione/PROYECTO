@@ -358,12 +358,13 @@ nav ul li a.active {
 
 .questions_container {
 	width: 100%;
+
 	height: fit-content;
 	display: grid;
-	background-image: url(/img/bgOrange.svg);
+	/* 	background-image: url(/img/bgOrange.svg); */
 	background-attachment: fixed;
-	/* background-color: #e8ebee; */
-	padding: 20px 0 20px 0;
+	background-color: #cddbdb;
+	padding: 20px 0 50px 0;
 }
 
 .questions_title {
@@ -501,7 +502,7 @@ h3 {
 }
 
 .portada__contacto {
-	background-image: url(img/contacto/argentina_patagonia.jpg);
+	background-image: url(/img/contacto/argentina_patagonia.jpg);
 }
 
 /* EXCURSIONES PROVINCIA */
