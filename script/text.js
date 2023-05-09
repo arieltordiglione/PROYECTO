@@ -1,3 +1,5 @@
+console.log('SCRIPT EJECUTADO');
+
 /* NAV RESPONSIVE */
 iconobarras = document.querySelector('.icono-barras');
 nav = document.querySelector('nav');
@@ -40,6 +42,20 @@ window.addEventListener('scroll', () => {
 	mountain2.style.bottom = value * -1.5 + 'px';
 });
 
+/* FORMULARIO */ /* mueve el label que está ubicado dentro del input
+agrega .fijar y da -135px de margintop */
+
+let inputs = document.getElementsByClassName('formulario__input');
+for (let i = 0; i < inputs.length; i++) {
+	inputs[i].addEventListener('keyup', function () {
+		if (this.value.length >= 1) {
+			this.nextElementSibling.classList.add('fijar');
+		} else {
+			this.nextElementSibling.classList.remove('fijar');
+		}
+	});
+}
+
 /* SLIDER EXCURSIONES */
 const sliderImages = document.querySelectorAll('.slider-images img');
 const prevButton = document.querySelector('.prev-button');
@@ -79,22 +95,6 @@ nextButton.addEventListener('click', nextImage);
 
 // Muestra la primera imagen al cargar la página
 showImage(currentImage);
-
-console.log('SCRIPT EJECUTADO');
-
-/* FORMULARIO */ /* mueve el label que está ubicado dentro del input
-agrega .fijar y da -135px de margintop */
-
-let inputs = document.getElementsByClassName('formulario__input');
-for (let i = 0; i < inputs.length; i++) {
-	inputs[i].addEventListener('keyup', function () {
-		if (this.value.length >= 1) {
-			this.nextElementSibling.classList.add('fijar');
-		} else {
-			this.nextElementSibling.classList.remove('fijar');
-		}
-	});
-}
 
 /* Funcion para calcular pasajeros*/
 function calcular() {
