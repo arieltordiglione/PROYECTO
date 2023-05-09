@@ -1,12 +1,11 @@
- 
+
 *aplicar animaciones
 * arreglar parallax en INDEX en responsive
  
 ****
 *preguntar a joha que boton usamos y que queden todos iguales
 *ver colores
-*revisar tamaño de letra, interlineado, etc
-* revisar todos los margin y paddings para que este todo uniforme
+
 
 
 
