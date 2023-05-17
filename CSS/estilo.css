@@ -70,13 +70,13 @@ p {
 		transform: scale(1, 1);
 	}
 	25% {
-		transform: scale(0.9, 1.1);
+		transform: scale(0.95, 1.05);
 	}
 	50% {
-		transform: scale(1.1, 0.9);
+		transform: scale(1.05, 0.95);
 	}
 	75% {
-		transform: scale(0.95, 1.05);
+		transform: scale(0.98, 1.01);
 	}
 }
 
@@ -510,6 +510,13 @@ nav ul li a.active {
 	padding: 10px;
 	min-width: 200px;
 	box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+	border-radius: 0px 30px 0px 30px;
+}
+
+#app .user:hover {
+	border-radius: 30px 0px 30px 0px;
+	transition: all 0.5s ease-out;
+	animation: gelatina 3s;
 }
 
 #app .user li {
@@ -619,10 +626,7 @@ h3 {
 	overflow: hidden;
 	cursor: pointer;
 	/* padding: 1.2em; */
-	border-top-left-radius: 0px;
-	border-top-right-radius: 30px;
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 30px;
+	border-radius: 0px 30px 0px 30px;
 	transition: all 0.5s ease-out;
 }
 
@@ -633,10 +637,7 @@ h3 {
 	transition: all 0.5s ease-out;
 	box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
 	border: 1px solid #cccccc;
-	border-top-left-radius: 30px;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 30px;
-	border-bottom-left-radius: 0px;
+	border-radius: 30px 0px 30px 0px;
 }
 
 .card__img {
