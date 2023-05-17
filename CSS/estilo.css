@@ -485,9 +485,8 @@ nav ul li a.active {
 	height: 400px;
 }
 #app ul {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 }
 
 #app li {
