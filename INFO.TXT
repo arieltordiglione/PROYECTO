@@ -1,0 +1,17 @@
+PROYECTO CODO A CODO
+COMISION 23012
+GRUPO 19
+
+PARTICIPANTES:
+*TORDIGLIONE ARIEL
+*JOHANA URAY
+
+*Es una página proveedora de excursiones y servicios relacionados al turismo en USHUAIA, EL CALATE Y BARILOCHE
+
+Api utilizada:https://jsonplaceholder.typicode.com
+Para generar nombres y mail en seccion "testimonio__api", en index.html
+
+*Fuentes de fonts.googleapis.com
+*iconos de fontawesome.com
+*clima (en index) de https://www.meteored.com.ar
+*videos de youtube
