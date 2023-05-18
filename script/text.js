@@ -56,6 +56,8 @@ for (let i = 0; i < inputs.length; i++) {
 	});
 }
 
+/*  LIMPIAR FORMULARIO  UNA VEZ ENVIADO */
+
 /* SLIDER EXCURSIONES */
 const sliderImages = document.querySelectorAll('.slider-images img');
 const prevButton = document.querySelector('.prev-button');

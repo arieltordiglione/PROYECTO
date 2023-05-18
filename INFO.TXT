@@ -15,3 +15,5 @@ Para generar nombres y mail en seccion "testimonio__api", en index.html
 *iconos de fontawesome.com
 *clima (en index) de https://www.meteored.com.ar
 *videos de youtube
+*formulario de contacto = formspree.io/f/moqzbzeb 
+ 
