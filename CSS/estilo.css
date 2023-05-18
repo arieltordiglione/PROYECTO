@@ -315,6 +315,8 @@ nav ul li a.active {
 		rgba(255, 255, 255, 1) 47%,
 		rgba(171, 204, 177, 1) 100%
 	);
+	animation-name: derizq;
+	animation-duration: 1s;
 }
 
 .sec__index h2 {
@@ -342,6 +344,8 @@ nav ul li a.active {
 	display: grid;
 	background-color: #abccb1;
 	/* 	background-color: #e2b10f; */
+	animation-name: derizq;
+	animation-duration: 1s;
 }
 
 .servicios_title {
@@ -397,6 +401,8 @@ nav ul li a.active {
 	background-attachment: fixed;
 	background-color: #cddbdb;
 	padding: 20px 0 50px 0;
+	animation-name: izqder;
+	animation-duration: 1s;
 }
 
 .questions_title {
@@ -489,6 +495,8 @@ nav ul li a.active {
 	/* background-color: #e2b10f; */
 	background-color: #abccb1;
 	padding-bottom: 4em;
+	animation-name: derizq;
+	animation-duration: 1s;
 }
 
 .testimonio__api h2 {
@@ -533,26 +541,37 @@ nav ul li a.active {
 	width: 100px;
 	height: 100px;
 }
-/* CONTACTO Y FORMULARIO*/
-.contacto_container {
+
+/* CLIMA INDEX */
+.clima__index {
 	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr; /*3 / 2 / 5 / 3;*/
-	padding: 30px 0px;
+	background-color: rgb(205, 219, 219);
+	padding-bottom: 2em;
+	animation-name: izqder;
+	animation-duration: 1s;
 }
 
-.contacto_content {
+.clima__index h3 {
 	text-align: center;
-	padding: 2em 1em;
-	letter-spacing: 0.1rem;
-	line-height: 1.7;
-	margin-top: 1em;
+	padding: 1em;
 }
 
-.contacto_content,
-h3 {
-	font-size: 1em;
-	grid-area: 2 / 2 / 3 / 3;
+.clima__container {
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: rgb(205, 219, 219);
+	margin: auto auto;
+}
+
+.clima__ushuaia,
+.clima__elcalafate,
+.clima__bariloche {
+	margin: auto auto;
+	padding: 10px;
+
+	width: 90%;
+	background-color: #fff;
 }
 
 /* PORTADA PROVINCIA */
@@ -945,6 +964,28 @@ h3 {
 	margin-top: -135px;
 }
 
+/* CONTACTO Y FORMULARIO*/
+.contacto_container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr; /*3 / 2 / 5 / 3;*/
+	padding: 30px 0px;
+}
+
+.contacto_content {
+	text-align: center;
+	padding: 2em 1em;
+	letter-spacing: 0.1rem;
+	line-height: 1.7;
+	margin-top: 1em;
+}
+
+.contacto_content,
+h3 {
+	font-size: 1em;
+	grid-area: 2 / 2 / 3 / 3;
+}
+
 @media only screen and (max-width: 1470px) {
 	/* EXCURSIONES PROVINCIA */
 
@@ -1127,6 +1168,11 @@ h3 {
 	#app .user {
 		width: 70%;
 		margin: auto auto;
+	}
+
+	/* CLIMA INDEX */
+	.clima__container {
+		grid-template-columns: 1fr;
 	}
 
 	/* EXCURSIONES PROVINCIA */
