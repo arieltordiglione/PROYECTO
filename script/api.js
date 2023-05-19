@@ -1,7 +1,7 @@
 console.log('API.JS CARGADO CON EXITO');
 
 /* API  */
-
+/* creador de perfiles. Usamos nombre y email */
 const API_URL = 'https://jsonplaceholder.typicode.com';
 
 const HTMLResponse = document.querySelector('#app');
@@ -46,10 +46,14 @@ fetch(`${API_URL}/users`)
 				);
 			}
 
+			/* calificación con estrellas */
+			let ratings = [
+				5, 4, 5, 4,
+			]; /* cantidad de estrellas que da cada usuario */
 			let ratingElem = document.createElement('li');
 			ratingElem.classList.add('rating');
 			ratingElem.innerHTML = 'Calificación: ';
-			for (let i = 0; i < 5; i++) {
+			for (let i = 0; i < ratings[index]; i++) {
 				let starSpan = document.createElement('span');
 				starSpan.innerHTML = '&#9733;';
 				ratingElem.appendChild(starSpan);
