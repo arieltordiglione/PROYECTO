@@ -56,7 +56,15 @@ for (let i = 0; i < inputs.length; i++) {
 	});
 }
 
-/*  LIMPIAR FORMULARIO  UNA VEZ ENVIADO */
+/*  LIMPIAR FORMULARIO  UNA VEZ ENVIADO Y RECARGADA LA PAGINA*/
+window.onload = function () {
+	limpiarFormulario();
+};
+
+function limpiarFormulario() {
+	var formulario = document.getElementById('formulario');
+	formulario.reset();
+}
 
 /* SLIDER EXCURSIONES */
 const sliderImages = document.querySelectorAll('.slider-images img');
