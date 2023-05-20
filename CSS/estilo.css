@@ -6,7 +6,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-/* averiguar si se usa ROOT para definir todos los colores y modificarlos rapido */
+
 /* :root {
 	--color-gris1: #ccc;
 	--color-gris2: #aaa;
@@ -22,6 +22,7 @@ body {
 	overflow-x: hidden;
 	behavior: smooth;
 	background-color: #fff;
+	animation: 5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
 }
 
 h1 {
@@ -40,6 +41,28 @@ p {
 	font-size: 1em;
 	letter-spacing: 0.1rem;
 	line-height: 1.7;
+}
+
+@keyframes wipe-cinematic-in {
+	0% {
+		clip-path: inset(100% 0 100% 0);
+	}
+	30%,
+	70% {
+		clip-path: inset(10% 0 10% 0);
+	}
+	100% {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+@keyframes wipe-in-down {
+	from {
+		clip-path: inset(0 0 100% 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
 }
 
 @keyframes derizq {
@@ -310,11 +333,7 @@ nav ul li a.active {
 
 /*ABOUT*/
 .sec__index {
-	background: linear-gradient(
-		180deg,
-		rgba(255, 255, 255, 1) 47%,
-		rgba(171, 204, 177, 1) 100%
-	);
+	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 47%, rgba(171, 204, 177, 1) 100%);
 	animation-name: derizq;
 	animation-duration: 1s;
 }
